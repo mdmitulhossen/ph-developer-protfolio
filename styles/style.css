@@ -37,12 +37,13 @@
     font-size: 35px;
     font-weight: 700;
 }
-.main-description{
+
+.main-description {
     color: var(--description-color);
-text-align: center;
-font-size: 16px;
-line-height: 30px;
-margin: 15px 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 15px 0;
 }
 
 /* header related styles */
@@ -57,6 +58,7 @@ header {
     height: 640px;
     padding: 20px;
     overflow: hidden;
+    position: relative;
 }
 
 .header-description {
@@ -67,14 +69,18 @@ header {
 
 .header-description img {
     width: 35%;
-    max-height: 560px;
+    max-width: 445px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
 }
 
 .header-content {
     padding: 0 225px;
-    margin-top: -50px;
+    margin-top: 150px;
     width: 60%;
+
 }
 
 .header-content .desc {
@@ -179,21 +185,89 @@ header {
     padding: 70px 150px;
     text-align: center;
 }
-.about-contact{
+
+.about-contact {
     display: flex;
     justify-content: space-between;
 }
-.main-title::before{
+
+/* .main-title::before {
     content: "";
     width: 80px;
     height: 3px;
     background-color: var(--btnBg);
     position: absolute;
-    bottom: -175px;
+    bottom: -190px;
     transform: translate(45px);
-    
+} */
+.main-title{
+    border-bottom: 4px solid var(--btnBg);
+    display: inline-block;
+    text-align: center;
 }
-.about-contact .contact-value{
-   font-weight: 700;
-   color: var(--title-color);
+
+.about-contact .contact-value {
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+
+.what-i-do {
+    padding: 0 225px;
+}
+
+.what-i-do-container {
+
+    margin-top: 10px;
+    padding: 70px 150px;
+    text-align: center;
+}
+
+
+
+.skill{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-content {
+    width: 200px;
+    height: 300px;
+      padding: 15px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(247, 125, 125, 0.3) 0px 18px 36px -18px inset;
+}
+.skill-content h4{
+    margin: 10px 0;
+}
+.skill-content p{
+    color: var(--description-color);
+}
+
+.resume{
+    padding: 0 225px;
+}
+.resume-container{
+    text-align: center;
+    margin-top: 100px;
+}
+.resume-description{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.resume-description .description{
+    margin-top: 40px;
+}
+.resume-details{
+    padding: 20px 0;
+}
+.resume-details p{
+    margin-bottom: 10px;
+}
+.resume-btn{
+    display: flex;
+    justify-content: center;
 }
