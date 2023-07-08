@@ -1,0 +1,138 @@
+/*==== common style ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --headerBg: #FFF8F3;
+    --btnBg: #FD6E0A;
+    --title-color: #181818;
+    --small-title-color: #474747;
+    --description-color: #757575;
+
+}
+
+.btn {
+
+    border-radius: 5px;
+    background: var(--btnBg);
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    padding: 10px 15px;
+    transition: all 0.2s ease-in;
+}
+.btn:hover{
+    background-color: #ca5908;
+}
+
+/* header related styles */
+header {
+    background-color: var(--headerBg);
+    background-image: url("../images/header_bg.png"),url(../images/developer.png);
+    background-size: 45%,80px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right bottom ,left;
+    background-position-x: right,50px;
+    width: 100vw;
+    height: 640px;
+    padding: 20px;
+    overflow: hidden;
+}
+.header-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-description img{
+    width: 35%;
+    max-height: 560px;
+
+}
+.header-content{
+    padding: 0 225px;
+    margin-top: -50px;
+    width: 60%;
+}
+.header-content .desc{
+   color: var(--description-color);
+   max-width: 585px;
+}
+.small-title{
+    color: var(--small-title-color);
+    font-size: 45px;
+    font-weight: 600;
+
+}
+.title{
+    color: var(--title-color);
+    font-size: 60px;
+    font-weight: 700;
+}
+.header-btn{
+    margin-top: 10px;
+}
+.contact-btn{
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--btnBg);
+    border: 2px solid var(--btnBg);
+    padding: 10px 15px;
+    transition: all 0.2s ease-in;
+    margin-left: 8px;
+}
+.contact-btn:hover{
+    background-color: var(--btnBg);
+    color: white;
+}
+/* Nav related style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 225px;
+    align-items: center;
+}
+
+.logo {
+    color: var(--title-color);
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: var(--btnBg);
+}
+
+.nav-items {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items li {
+    list-style: none;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: var(--small-title-color);
+    font-size: 20px;
+}
+.li-hover{
+    transition: all 0.1s ease-in-out;
+    padding: 5px 10px;
+}
+.li-hover:hover{
+    
+    border: 2px solid var(--btnBg);
+    border-radius: 5px;
+}
+.li-hover:hover a{
+    color: var(--btnBg);
+}
