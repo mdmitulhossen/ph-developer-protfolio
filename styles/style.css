@@ -26,57 +26,80 @@
     padding: 10px 15px;
     transition: all 0.2s ease-in;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #ca5908;
+}
+
+.main-title {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+.main-description{
+    color: var(--description-color);
+text-align: center;
+font-size: 16px;
+line-height: 30px;
+margin: 15px 0;
 }
 
 /* header related styles */
 header {
     background-color: var(--headerBg);
-    background-image: url("../images/header_bg.png"),url(../images/developer.png);
-    background-size: 45%,80px;
+    background-image: url("../images/header_bg.png"), url(../images/developer.png);
+    background-size: 45%, 80px;
     background-repeat: no-repeat, no-repeat;
-    background-position: right bottom ,left;
-    background-position-x: right,50px;
+    background-position: right bottom, left;
+    background-position-x: right, 50px;
     width: 100vw;
     height: 640px;
     padding: 20px;
     overflow: hidden;
 }
-.header-description{
+
+.header-description {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-description img{
+
+.header-description img {
     width: 35%;
     max-height: 560px;
 
 }
-.header-content{
+
+.header-content {
     padding: 0 225px;
     margin-top: -50px;
     width: 60%;
 }
-.header-content .desc{
-   color: var(--description-color);
-   max-width: 585px;
+
+.header-content .desc {
+    color: var(--description-color);
+    max-width: 585px;
 }
-.small-title{
+
+.small-title {
     color: var(--small-title-color);
     font-size: 45px;
     font-weight: 600;
 
 }
-.title{
+
+.title {
     color: var(--title-color);
     font-size: 60px;
     font-weight: 700;
 }
-.header-btn{
+
+.header-btn {
     margin-top: 10px;
 }
-.contact-btn{
+
+.contact-btn {
     border-radius: 5px;
     cursor: pointer;
     font-weight: 700;
@@ -86,10 +109,12 @@ header {
     transition: all 0.2s ease-in;
     margin-left: 8px;
 }
-.contact-btn:hover{
+
+.contact-btn:hover {
     background-color: var(--btnBg);
     color: white;
 }
+
 /* Nav related style */
 .navbar {
     display: flex;
@@ -123,16 +148,52 @@ header {
     text-decoration: none;
     color: var(--small-title-color);
     font-size: 20px;
+    font-weight: 600;
 }
-.li-hover{
+
+.li-hover {
     transition: all 0.1s ease-in-out;
     padding: 5px 10px;
 }
-.li-hover:hover{
-    
+
+.li-hover:hover {
+
     border: 2px solid var(--btnBg);
     border-radius: 5px;
 }
-.li-hover:hover a{
+
+.li-hover:hover a {
     color: var(--btnBg);
+}
+
+
+/* main section related style  */
+
+.about {
+    padding: 0 225px;
+}
+
+.about-container {
+    background-color: var(--headerBg);
+    margin-top: 100px;
+    padding: 70px 150px;
+    text-align: center;
+}
+.about-contact{
+    display: flex;
+    justify-content: space-between;
+}
+.main-title::before{
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: var(--btnBg);
+    position: absolute;
+    bottom: -175px;
+    transform: translate(45px);
+    
+}
+.about-contact .contact-value{
+   font-weight: 700;
+   color: var(--title-color);
 }
