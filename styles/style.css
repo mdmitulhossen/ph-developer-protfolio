@@ -271,3 +271,41 @@ header {
     display: flex;
     justify-content: center;
 }
+
+
+/* footer related style  */
+
+footer{
+    margin-top: 70px;
+    padding: 80px 225px;
+    background: var(--headerBg);
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.footer-container h2,p{
+    margin-bottom: 10px;
+}
+.footer-container p{
+    color: var(--description-color);
+}
+.footer-container form{
+    margin-top: 10px;
+}
+.footer-container form input,textarea{
+    display: block;
+    margin-top: 10px;
+    width: 300px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+.footer-container form input:focus,textarea:focus{
+    border:2px solid var(--btnBg);
+    outline: 0;
+}
+.footer-container button{
+    margin-top: 10px;
+}
